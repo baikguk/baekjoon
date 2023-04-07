@@ -1,0 +1,33 @@
+ 간단한 등차수열 1 3 5 7 9
+	for 문 사용시 (a+=2) -> 시간복잡도 o(n)
+	등차수열 공식 사용시
+	n(2a + (n-1)d)/2 -> 시간복잡도 O(1) 
+	5(2*1 + 4*2) 
+	n: 수의 개수, a : 첫항, d: 공차
+
+등차수열 일반항 : An = A1 + (n-1)d
+등비수열 일반항 : An = A1*r^(n-1)
+
+동적 프로그래밍,메모니제이션
+ -> 중복되는 결과를 배열에 저장하여 같은 결과가 나오면 꺼내씀
+ 
+
+BufferedReader/ BufferdWriter
+	BufferedReader는 키보드 입출력을 로컬버퍼에 저장해 값을 받기 때문에 CPU성능에 효과적
+	형식)
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)
+		BufferedWriter bw = new BufferedWriter(new OuputStreamWriter(System.out)
+		int num = Integar.parseInt(br.readline()) //라인 단위로 읽기
+		br.close()
+		bw.write(num+"\n")
+		bw.flush();
+		bw.close();
+
+재귀 호출 전에
+	for (int i = 1; i <= x; i++)
+            		calc(i);
+	같이 한번씩 불러주면 메모리와 속도를 줄일 수 있음
+
+특정 패턴을 재귀를 통해 배열값 저장 할때 
+	int[]로 선언시 0으로 초기화 되서 원하는 값이 안돌음 -> 돌게 해도 수행값이 0인 경우 다른값의 재귀 수행중에 영향을 받음	
+	Interger[] 선언시 배열값이 null이기 때문에 영향을 받지 않게 할 수 있음
