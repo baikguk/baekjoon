@@ -1,5 +1,5 @@
 import java.io.*;
-
+//병합정렬 리뷰
 public class Main {
     static int[] buff;
 

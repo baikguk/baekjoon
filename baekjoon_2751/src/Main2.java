@@ -1,5 +1,5 @@
 import java.io.*;
-
+// 퀵정렬 리뷰
 public class Main2 {
     static class Stack{
         int capacity;
